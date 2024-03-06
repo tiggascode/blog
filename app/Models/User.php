@@ -26,6 +26,9 @@ class User extends Authenticatable implements MustVerifyEmail
             self::ROLE_READER => 'Reader',
         ];
     }
+    public function isAdmin(){
+        return $this->role === self::ROLE_ADMIN;
+    }
     /**
      * The attributes that are mass assignable.
      *

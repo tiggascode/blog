@@ -36,10 +36,20 @@
                                 <a class="nav-link" href="{{route('personal.main.index')}}">Login</a>
                             @endguest
                         </li>
+                        <li class="nav-item">
+                            @auth()
+                            @if(auth()->user()->isAdmin())
+                            <a  class="nav-link" href="{{ route('admin.main.index') }}">Admin Dashboard</a>
+                            @endif
+                            @endauth
+                        </li>
                     </ul>
 
+
                 </div>
+
             </nav>
+            
         </div>
     </header>
 

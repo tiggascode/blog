@@ -30,7 +30,7 @@
                     <tr>
                       <td>{{$post->id}}</td>
                       <td>{{$post->title}}</td>
-                      <td><a href="{{route ('admin.post.show' , $post->id)}}">show</a>
+                      <td><a href="{{route ('post.show' , $post->id)}}">show</a>
                           <form action="{{ route('personal.liked.delete' , $post->id) }}" method="POST">
                             @csrf
                             @method('DELETE')
