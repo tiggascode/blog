@@ -14,14 +14,14 @@
       <div class="container-fluid">
         <!-- Small boxes (Stat box) -->
         <div class="row">
-          <div class="col-1  ">
-            <a href="{{route('admin.post.index')}}" class="btn btn-block btn-primary">Back</a>
-            <a href="{{route('admin.post.edit', $post->id)}}" class="btn btn-block btn-primary">Edit</a>
+          <div class="col-1" >
+            <a   href="{{route('admin.post.index')}}" class="btn btn-block  btn-primary">Back</a>
+            <a  href="{{route('admin.post.edit', $post->id)}}" class="btn btn-block btn-primary">Edit</a>
             <form action="{{ route('admin.post.delete' , $post->id) }}" method="POST">
                             @csrf
                             @method('DELETE')
-                            <button class="btn-danger">delete</button>
-                          </form>
+                            <button class="border-0 btn  btn-block  btn-danger">delete</button>
+            </form>
           </div>
           <div class="col-12">
             <div class="card">

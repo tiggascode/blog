@@ -25,6 +25,8 @@
                     <tr>
                       <th>ID</th>
                       <th>name</th>
+                      <th>role</th>
+                      <th>mail</th>
                       <th>Actions</th>
                     </tr>
                   </thead>
@@ -33,6 +35,12 @@
                     <tr>
                       <td>{{$user->id}}</td>
                       <td>{{$user->name}}</td>
+                        @if ($user->isAdmin())
+                          <td>Admin</td>
+                        @else 
+                          <td>Reader</td>                        
+                        @endif
+                        <td>{{ $user->email }}</td>
                       <td><a href="{{route ('admin.user.show' , $user->id)}}">show</a>
                           <a href="{{route ('admin.user.edit' , $user->id)}}">edit</a>
                           <form action="{{ route('admin.user.delete' , $user->id) }}" method="POST">
