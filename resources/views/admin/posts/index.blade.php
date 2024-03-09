@@ -15,7 +15,7 @@
         <!-- Small boxes (Stat box) -->
         <div class="row">
           <div class="col-1">
-            <a href="{{route('admin.post.create')}}" class="btn btn-block btn-primary">Add</a>
+            <a href="{{route('admin.post.create')}}" class="btn btn-block mb-3 btn-primary">Add</a>
           </div>
           <div class="col-12">
             <div class="card">
@@ -33,7 +33,8 @@
                     <tr>
                       <td>{{$post->id}}</td>
                       <td>{{$post->title}}</td>
-                      <td><a href="{{route ('admin.post.show' , $post->id)}}">show</a>
+                      <td>
+                          <a href="{{route ('admin.post.show' , $post->id)}}">show</a>
                           <a href="{{route ('admin.post.edit' , $post->id)}}">edit</a>
                           <form action="{{ route('admin.post.delete' , $post->id) }}" method="POST">
                             @csrf

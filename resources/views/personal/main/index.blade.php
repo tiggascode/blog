@@ -15,7 +15,7 @@ Personal
             <!-- small box -->
             <div class="small-box bg-info">
               <div class="inner">
-                <h3></h3>
+                <h3>{{ $likedPostsCount }}</h3>
 
                 <p>Likes</p>
               </div>
@@ -30,7 +30,7 @@ Personal
             <!-- small box -->
             <div class="small-box bg-success">
               <div class="inner">
-                <h3></h3>
+                <h3>{{$commentPostsCount}}</h3>
 
                 <p>Comments</p>
               </div>

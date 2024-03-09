@@ -1,0 +1,9 @@
+.nav-sidebar>.nav-item {
+    margin-bottom: 10px;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+.btn{
+    margin-bottom: 7px;
+}

@@ -2,7 +2,7 @@
  @section('content')
  <!-- Content Wrapper. Contains page content -->
  @section('headerH1')
-  Edit "{{$post->title}}" 
+  Edit "{{$category->title}}" 
   @endsection
   @section('headerLi')
   <a href="{{ route('admin.category.index') }}">Categories</a>  /  <a href="{{ route('admin.category.show', $category->id) }}">{{$category->title}}</a>  /  Edit
