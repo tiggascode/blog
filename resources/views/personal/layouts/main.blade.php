@@ -54,6 +54,9 @@
         </li>
       </ul>
       <ul class="navbar-nav">
+      <li class="btn nav-item">
+        {{auth()->user()->name}}      
+      </li>
         <li class="nav-item">
             <form action="{{route('logout')}}" method="POST">
               @csrf

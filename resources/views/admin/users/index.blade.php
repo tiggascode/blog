@@ -32,6 +32,9 @@
                   </thead>
                   <tbody >
                     @foreach ($users as $user)
+                    @if($user->id === auth()->user()->id)
+                      @continue
+                    @endif
                     <tr>
                       <td>{{$user->id}}</td>
                       <td>{{$user->name}}</td>

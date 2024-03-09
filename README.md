@@ -1,3 +1,11 @@
-<div>php aritsan serve</div>
-<div>npm run dev</div>
-<div>php artisan queue:work</div>
+Intallation 
+
+npm install 
+composer install 
+
+php artisan migrate 
+
+Run 
+php artisan serve
+npm run dev
+php artisan queue:work
