@@ -7940,3 +7940,17 @@ label {
   text-align: center; }
 
 /*# sourceMappingURL=style.css.map */
+
+
+.bodyDark {
+  background-color: black !important;
+  color: white !important;
+}
+
+.textDark{
+  color: white !important;
+}
+
+.textWhite {
+  color: black !important;
+}

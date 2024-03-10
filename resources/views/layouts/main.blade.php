@@ -46,6 +46,9 @@
                             @endif
                             @endauth
                         </li>
+                        <li class="nav-item">
+                            <a id="darkMode" class="nav-link">Dark</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
