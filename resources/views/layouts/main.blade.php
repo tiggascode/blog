@@ -47,7 +47,7 @@
                             @endauth
                         </li>
                         <li class="nav-item">
-                            <a id="darkMode" class="nav-link">Dark</a>
+                            <a id="darkMode" class="nav-link btn">Dark</a>
                         </li>
                     </ul>
                 </div>
